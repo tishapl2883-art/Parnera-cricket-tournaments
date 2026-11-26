@@ -1,0 +1,1 @@
+{"version":2,"defects":{"Tests\\Feature\\FantasyTest::test_cric11_hub_and_team_creation_and_live_scoring":7},"times":{"Tests\\Feature\\FantasyTest::test_cric11_hub_and_team_creation_and_live_scoring":0.163,"Tests\\Feature\\FantasyTest::test_invalid_selections_are_rejected":0.01}}
