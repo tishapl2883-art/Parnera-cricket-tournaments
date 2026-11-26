@@ -1,16 +1,10 @@
 {
-    "name": "guzzlehttp/psr7",
-    "description": "PSR-7 message implementation that also provides common utility methods",
+    "name": "guzzlehttp/uri-template",
+    "description": "A polyfill class for uri_template of PHP",
     "license": "MIT",
     "keywords": [
-        "request",
-        "response",
-        "message",
-        "stream",
-        "http",
-        "uri",
-        "url",
-        "psr-7"
+        "guzzlehttp",
+        "uri-template"
     ],
     "authors": [
         {
@@ -32,65 +26,38 @@
             "name": "Tobias Nyholm",
             "email": "tobias.nyholm@gmail.com",
             "homepage": "https://github.com/Nyholm"
-        },
-        {
-            "name": "Márk Sági-Kazár",
-            "email": "mark.sagikazar@gmail.com",
-            "homepage": "https://github.com/sagikazarmark"
-        },
-        {
-            "name": "Tobias Schultze",
-            "email": "webmaster@tubo-world.de",
-            "homepage": "https://github.com/Tobion"
-        },
-        {
-            "name": "Márk Sági-Kazár",
-            "email": "mark.sagikazar@gmail.com",
-            "homepage": "https://sagikazarmark.hu"
         }
     ],
     "require": {
         "php": "^7.2.5 || ^8.0",
-        "psr/http-factory": "^1.0",
-        "psr/http-message": "^1.1 || ^2.0",
-        "ralouphie/getallheaders": "^3.0",
-        "symfony/deprecation-contracts": "^2.5 || ^3.0",
         "symfony/polyfill-php80": "^1.25"
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.8.2",
-        "http-interop/http-factory-tests": "1.1.0",
-        "jshttp/mime-db": "1.54.0.1",
-        "phpunit/phpunit": "^8.5.52 || ^9.6.34"
-    },
-    "provide": {
-        "psr/http-factory-implementation": "1.0",
-        "psr/http-message-implementation": "1.0"
-    },
-    "suggest": {
-        "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+        "phpunit/phpunit": "^8.5.52 || ^9.6.34",
+        "uri-template/tests": "1.0.0"
     },
     "repositories": [
         {
             "type": "package",
             "package": {
-                "name": "jshttp/mime-db",
-                "version": "1.54.0.1",
+                "name": "uri-template/tests",
+                "version": "1.0.0",
                 "dist": {
                     "type": "zip",
-                    "url": "https://codeload.github.com/jshttp/mime-db/zip/0a9fd0bfbc87a725ff638495839114e7807b7177"
+                    "url": "https://github.com/uri-templates/uritemplate-test/archive/520fdd8b0f78779d12178c357a986e0e727f4bd0.zip"
                 }
             }
         }
     ],
     "autoload": {
         "psr-4": {
-            "GuzzleHttp\\Psr7\\": "src/"
+            "GuzzleHttp\\UriTemplate\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GuzzleHttp\\Tests\\Psr7\\": "tests/"
+            "GuzzleHttp\\UriTemplate\\Tests\\": "tests"
         }
     },
     "config": {
